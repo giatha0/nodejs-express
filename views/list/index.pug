@@ -1,0 +1,16 @@
+a(href="/todos/create") create
+
+form(action="/todos/search", method="GET")
+  input(type="text", name ="q")
+  button Search
+ul
+  each todo in todos
+    li= todo.work
+    
+    
+h1 Create Todo
+form(action="/todos/create", method="POST")
+  label Todo
+  input(type="text", name="work")
+  
+  button Create
